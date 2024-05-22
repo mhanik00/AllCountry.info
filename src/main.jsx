@@ -13,6 +13,7 @@ import axios from 'axios';
 import { allCountryLoader } from './libs/fetchData';
 import RootLayout from './layout/RootLayout';
 import About from './pages/About';
+import LogIn from './pages/LogIn';
 
 const countryLoader =({params:{countryCCa3Code}})=>{
   const url= `https://restcountries.com/v3.1/alpha/${countryCCa3Code}`
@@ -52,6 +53,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About/>,
+       
+      },
+      {
+        path: "/login",
+        element: <LogIn/>,
        
       },
    
