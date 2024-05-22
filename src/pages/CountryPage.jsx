@@ -1,5 +1,5 @@
 
-import { Link, useLoaderData } from "react-router-dom"
+import {  useLoaderData } from "react-router-dom"
 
 export default function CountryPage() {
 
@@ -10,7 +10,7 @@ export default function CountryPage() {
     <div className="border border-red-500 rounded-md px-3 m-2 py-3 text-black flex justify-between items-center gap-x-3 ">
 
     <p className="text-center text-2xl font-bold text-purple-300">{country?.name?.official} </p>
-    <img className=" w-52" alt="country " src={country?.flags?.png} ></img>
+    <img className=" w-52 max-sm:h-20" alt="country " src={country?.flags?.png} ></img>
     </div>
 
   <div className="grid sm:grid-cols-3 gap-3 pb-4 ">

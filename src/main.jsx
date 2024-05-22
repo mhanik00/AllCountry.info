@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       },{
         path: "/country/:countryCCa3Code",
         element: <CountryPage/>,
-        loader: countryLoader
+        loader: countryLoader,
       },
       {
         path: "/about",
